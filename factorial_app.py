@@ -51,7 +51,7 @@ def shorten_number(val: int, max_digits: int = 20) -> str:
 
 def show_result(n, loop_result, loop_time, rec_result, rec_time):
     same = (loop_result == rec_result)
-    status = "✅ 같음" if same else "❌ 다름"
+    status = "같음" if same else "다름"
     print(f"n = {n:3d} | {status:6s} | 반복={loop_time:.8f}s | 재귀={rec_time:.8f}s")
     print(f"   [반복] {shorten_number(loop_result)}")
     print(f"   [재귀] {shorten_number(rec_result)}")
